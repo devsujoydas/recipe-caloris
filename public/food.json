@@ -1,21 +1,50 @@
 [
     {
-        "name": "Spaghetti Bolognese",
-        "discription":"Classic Italian pasta dish with savory meat <br /> sauce.",
-        {'500g ground beef',},
-        "":"",
-        "":"1 onion, chopped",
-        "":"2 cloves garlic, minced",
-        "Minutes":30,
-        "calories":600
-        
+        "img": "./imgs/food 1.png",
+        "name": "Classic Spaghetti Bolognese",
+        "description": "Classic Italian pasta dish with savory meat sauce.",
+        "ingredients": ["400g spaghetti", "300g ground beef", "1 cup marinara sauce", "1/2 cup grated Parmesan cheese", "2 tbsp olive oil"],
+        "minutes": "30",
+        "calories": "550"
+    },
+    {
+        "img": "./imgs/food 2.png",
+        "name": "Grilled Chicken Caesar Delight",
+        "description": "Fresh romaine lettuce topped with grilled chicken, croutons, and Caesar dressing.",
+        "ingredients": ["2 chicken breasts", "1 head romaine lettuce", "1/2 cup croutons", "1/4 cup shredded Parmesan", "Caesar dressing"],
+        "minutes": "20",
+        "calories": "320"
+    },
+    {
+        "img": "./imgs/food 3.png",
+        "name": "Authentic Margherita Pizza",
+        "description": "Traditional pizza with fresh mozzarella, basil, and tomato sauce.",
+        "ingredients": ["1 pizza base", "150g fresh mozzarella", "100g tomato sauce", "5 fresh basil leaves", "1 tbsp olive oil"],
+        "minutes": "25",
+        "calories": "750"
+    },
+    {
+        "img": "./imgs/food 4.png",
+        "name": "Crispy Beef Tacos",
+        "description": "Crispy tacos filled with seasoned beef, lettuce, and cheese.",
+        "ingredients": ["300g ground beef", "6 taco shells", "1 cup shredded lettuce", "1/2 cup grated cheddar cheese", "2 tbsp taco seasoning"],
+        "minutes": "15",
+        "calories": "400"
+    },
+    {
+        "img": "./imgs/food 5.png",
+        "name": "Tangy Vegetable Stir Fry",
+        "description": "A mix of fresh vegetables sautéed in a tangy soy-based sauce.",
+        "ingredients": ["1 zucchini, sliced", "1 red bell pepper, sliced", "1 cup broccoli florets", "2 tbsp soy sauce", "1 tbsp sesame oil"],
+        "minutes": "15",
+        "calories": "180"
+    },
+    {
+        "img": "./imgs/food 6.png",
+        "name": "Creamy Tomato Basil Soup",
+        "description": "Creamy tomato soup with fresh basil, served warm.",
+        "ingredients": ["6 ripe tomatoes, chopped", "2 cups chicken broth", "1/2 cup heavy cream", "1/4 cup fresh basil, chopped", "2 tbsp olive oil"],
+        "minutes": "30",
+        "calories": "230"
     }
 ]
-
-
-
-
-
-
-
-
