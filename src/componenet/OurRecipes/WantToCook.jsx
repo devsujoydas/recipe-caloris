@@ -2,9 +2,7 @@
 
 const WantToCook = () => {
     return (
-        <div className="border py-10 rounded-2xl">
-
-            {/* Want to Cook section  */}
+        <div className="border py-10 rounded-2xl ">
             <h1 className="font-semibold text-2xl text-center ">Want to Cook: 01</h1>
             <div className="overflow-x-auto">
                 <table className="table">
@@ -45,9 +43,6 @@ const WantToCook = () => {
                     </tbody>
                 </table>
             </div>
-
-
-            {/* Currently Cooking Section  */} 
             <h1 className="font-semibold text-2xl mt-6 text-center ">Currently Cooking: 02</h1>
             <div>
                 <table className="table">
