@@ -11,8 +11,8 @@ const OurRecipes = () => {
             .then(data => setFood(data))
     }, [])
 
-     const WantToCookHandler = () =>{
-        console.log('Clicked');
+     const WantToCookHandler = (food) =>{
+        console.log('Clicked',food);
      }
 
     return (
@@ -20,13 +20,13 @@ const OurRecipes = () => {
             <h1 className="text-center font-bold text-4xl">Our Recipes</h1>
             <p className="text-center text-gray-500 my-5">Lorem ipsum dolor sit amet consectetur. Proin et feugiat senectus vulputate netus pharetra rhoncus. Eget <br /> urna volutpat curabitur elementum mauris aenean neque. </p>
             <div className="flex gap-4 flex-col lg:flex-row">
-                <div id="food-container" className="grid grid-cols-1 lg:grid-cols-2 gap-3  items-center">
+                <div id="food-container" className="lg:w-3/5 grid grid-cols-1 lg:grid-cols-2 gap-3">
                     {foods.map((food, idx) => (
                         <FoodCard food={food} key={idx} WantToCookHandler={WantToCookHandler}/>
                     ))}
                 </div>
 
-                <div>
+                <div className="lg:w-3/5">
                     <WantToCook />
                 </div>
             </div>
