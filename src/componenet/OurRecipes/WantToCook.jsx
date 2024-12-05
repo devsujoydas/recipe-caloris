@@ -47,7 +47,7 @@ const WantToCook = () => {
             </div>
 
 
-            {/* Currently Cooking Section  */}
+            {/* Currently Cooking Section  */} 
             <h1 className="font-semibold text-2xl mt-6 text-center ">Currently Cooking: 02</h1>
             <div>
                 <table className="table">
