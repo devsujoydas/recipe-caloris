@@ -1,5 +1,6 @@
 [
     {
+        "id": "rec001",
         "img": "./imgs/food 1.png",
         "name": "Classic Spaghetti Bolognese",
         "description": "Classic Italian pasta dish with savory meat sauce.",
@@ -8,6 +9,7 @@
         "calories": "550"
     },
     {
+        "id": "rec002",
         "img": "./imgs/food 2.png",
         "name": "Grilled Chicken Caesar Delight",
         "description": "Fresh romaine lettuce topped with grilled chicken, croutons, and Caesar dressing.",
@@ -16,6 +18,7 @@
         "calories": "320"
     },
     {
+        "id": "rec003",
         "img": "./imgs/food 1.png",
         "name": "Authentic Margherita Pizza",
         "description": "Traditional pizza with fresh mozzarella, basil, and tomato sauce.",
@@ -24,6 +27,7 @@
         "calories": "750"
     },
     {
+        "id": "rec004",
         "img": "./imgs/food 2.png",
         "name": "Crispy Beef Tacos",
         "description": "Crispy tacos filled with seasoned beef, lettuce, and cheese.",
@@ -32,6 +36,7 @@
         "calories": "400"
     },
     {
+        "id": "rec005",
         "img": "./imgs/food 1.png",
         "name": "Tangy Vegetable Stir Fry",
         "description": "A mix of fresh vegetables sautéed in a tangy soy-based sauce.",
@@ -40,6 +45,7 @@
         "calories": "180"
     },
     {
+        "id": "rec006",
         "img": "./imgs/food 2.png",
         "name": "Creamy Tomato Basil Soup",
         "description": "Creamy tomato soup with fresh basil, served warm.",

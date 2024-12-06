@@ -21,21 +21,25 @@ const OurRecipes = () => {
         setFoodCooking(wantToCooking)
     }
 
-    const prepairingHandler = (food) => {
-        const cookedFoodReady = [...cookedFood, food]
+    const prepairingHandler = (preFood) => {
+        
+        const cookedFoodReady = [...cookedFood, preFood]
         setCookedFood(cookedFoodReady)
-        minuteCaloriesHandler(food.minutes,food.calories)
+        
+        minuteCaloriesHandler(preFood.minutes, preFood.calories)
 
+        const newArr = foodCooking.filter(food => food.id != preFood.id)
+        setFoodCooking(newArr)
     }
-    const minuteCaloriesHandler = (minute,foodCalories) => {
+    const minuteCaloriesHandler = (minute, foodCalories) => {
         let time = parseInt(minute);
-        setMinutes(minutes+time)
+        setMinutes(minutes + time)
 
         let calorie = parseInt(foodCalories);
         setCalories(calories + calorie)
-      };
-      
-    
+    };
+
+
 
 
     return (
@@ -67,7 +71,7 @@ const OurRecipes = () => {
                                 <tbody className="">
                                     {foodCooking.map((food, idx) => (
                                         <tr key={idx} className="bg-gray-100">
-                                            <th>{idx}</th>
+                                            <th>{idx+1}</th>
                                             <td className="font-bold">{food.name}</td>
                                             <td> {food.minutes} minutes </td>
                                             <td>{food.calories} calories</td>
@@ -99,7 +103,7 @@ const OurRecipes = () => {
                                 <tbody>
                                     {cookedFood.map((foodCooked, idx) => (
                                         <tr key={idx} className="">
-                                            <th>{idx}</th>
+                                            <th>{idx+1}</th>
                                             <td className="font-bold"> {foodCooked.name} </td>
                                             <td> {foodCooked.minutes} minutes </td>
                                             <td> {foodCooked.calories} calories</td>
