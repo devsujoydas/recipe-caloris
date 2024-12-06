@@ -13,9 +13,9 @@ const OurRecipes = () => {
             .then(data => setFoods(data))
     }, [])
 
-     const WantToCookHandler = (food) =>{
-        console.log('Clicked',food);
-        setFoodCooking(food)
+     const wantToCookHandler = (food) =>{
+        let wantToCooking = [...foodCooking , food]
+        setFoodCooking(wantToCooking)
      }
 
     return (
@@ -25,7 +25,7 @@ const OurRecipes = () => {
             <div className="flex gap-4 flex-col lg:flex-row">
                 <div id="food-container" className="lg:w-3/5 grid grid-cols-1 lg:grid-cols-2 gap-3">
                     {foods.map((food, idx) => (
-                        <FoodCard food={food} key={idx} WantToCookHandler={WantToCookHandler}/>
+                        <FoodCard food={food} key={idx} wantToCookHandler={wantToCookHandler}/>
                     ))}
                 </div>
 

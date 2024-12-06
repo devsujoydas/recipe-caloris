@@ -1,7 +1,7 @@
 /* eslint-disable react/prop-types */
 
 
-const FoodCard = ({ food, WantToCookHandler }) => {
+const FoodCard = ({ food, wantToCookHandler }) => {
     const { img, name, description, minutes, calories, ingredients } = food;
 
     return (
@@ -29,7 +29,7 @@ const FoodCard = ({ food, WantToCookHandler }) => {
                 </div>
             </div>
             <div>
-                <button onClick={()=>{WantToCookHandler(food)}} className="font-semibold bg-[#0BE58A] px-6 py-3 rounded-full hover:bg-[#5bf5a5] active:scale-95 transition-all">Want to Cook</button>
+                <button onClick={()=>{wantToCookHandler(food)}} className="font-semibold bg-[#0BE58A] px-6 py-3 rounded-full hover:bg-[#5bf5a5] active:scale-95 transition-all">Want to Cook</button>
             </div>
         </div>
     )
