@@ -9,7 +9,6 @@ const OurRecipes = () => {
     const [minutes, setMinutes] = useState(0);
     const [calories, setCalories] = useState(0);
 
-
     useEffect(() => {
         fetch('food.json')
             .then(res => res.json())
@@ -22,15 +21,15 @@ const OurRecipes = () => {
     }
 
     const prepairingHandler = (preFood) => {
-        
         const cookedFoodReady = [...cookedFood, preFood]
         setCookedFood(cookedFoodReady)
-        
-        minuteCaloriesHandler(preFood.minutes, preFood.calories)
 
         const newArr = foodCooking.filter(food => food.id != preFood.id)
         setFoodCooking(newArr)
+
+        minuteCaloriesHandler(preFood.minutes, preFood.calories)
     }
+
     const minuteCaloriesHandler = (minute, foodCalories) => {
         let time = parseInt(minute);
         setMinutes(minutes + time)
@@ -38,8 +37,6 @@ const OurRecipes = () => {
         let calorie = parseInt(foodCalories);
         setCalories(calories + calorie)
     };
-
-
 
 
     return (
@@ -71,7 +68,7 @@ const OurRecipes = () => {
                                 <tbody className="">
                                     {foodCooking.map((food, idx) => (
                                         <tr key={idx} className="bg-gray-100">
-                                            <th>{idx+1}</th>
+                                            <th>{idx + 1}</th>
                                             <td className="font-bold">{food.name}</td>
                                             <td> {food.minutes} minutes </td>
                                             <td>{food.calories} calories</td>
@@ -103,7 +100,7 @@ const OurRecipes = () => {
                                 <tbody>
                                     {cookedFood.map((foodCooked, idx) => (
                                         <tr key={idx} className="">
-                                            <th>{idx+1}</th>
+                                            <th>{idx + 1}</th>
                                             <td className="font-bold"> {foodCooked.name} </td>
                                             <td> {foodCooked.minutes} minutes </td>
                                             <td> {foodCooked.calories} calories</td>
@@ -111,9 +108,7 @@ const OurRecipes = () => {
                                     ))}
 
                                 </tbody>
-
-
-
+                                
                             </table>
                             <div className="text-center mt-10">
                                 <div className="font-semibold ">

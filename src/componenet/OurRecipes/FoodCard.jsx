@@ -14,8 +14,7 @@ const FoodCard = ({ food, wantToCookHandler }) => {
             <hr />
             <h1 className="font-semibold">Ingredients: {ingredients.length}</h1>
             <div className="ml-5">
-                {ingredients.map((ingredient, idx) => (
-                    <li className="text-gray-500" key={idx}>{ingredient}</li>))}
+                {ingredients.map((ingredient, idx) => (<li className="text-gray-500" key={idx}>{ingredient}</li>))}
             </div>
             <hr className="" />
             <div className="flex gap-4">
@@ -29,7 +28,10 @@ const FoodCard = ({ food, wantToCookHandler }) => {
                 </div>
             </div>
             <div>
-                <button onClick={()=>{wantToCookHandler(food)}} className="font-semibold bg-[#0BE58A] px-6 py-3 rounded-full hover:bg-[#5bf5a5] active:scale-95 transition-all">Want to Cook</button>
+                <button
+                    onClick={() => { wantToCookHandler(food) }}
+                    className="font-semibold bg-[#0BE58A] px-6 py-3 rounded-full hover:bg-[#5bf5a5] active:scale-95 transition-all">
+                    Want to Cook</button>
             </div>
         </div>
     )
