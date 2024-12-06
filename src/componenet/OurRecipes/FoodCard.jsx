@@ -1,5 +1,6 @@
 /* eslint-disable react/prop-types */
-
+import time from '../../../public/imgs/time.png'
+import fire from '../../../public/imgs/fire.png'
 
 const FoodCard = ({ food, wantToCookHandler }) => {
     const { img, name, description, minutes, calories, ingredients } = food;
@@ -19,11 +20,11 @@ const FoodCard = ({ food, wantToCookHandler }) => {
             <hr className="" />
             <div className="flex gap-4">
                 <div className="flex gap-1 justify-center itemce">
-                    <img src="/public/imgs/time.png" alt="" />
+                    <img src={time} alt="" />
                     <h1>{minutes} Minutes</h1>
                 </div>
                 <div className="flex gap-1 justify-center itemce">
-                    <img src="/public/imgs/fire.png" alt="" />
+                    <img src={fire} alt="" />
                     <h1>{calories} calories</h1>
                 </div>
             </div>

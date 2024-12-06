@@ -1,5 +1,6 @@
 
-
+import search from '../../../public/imgs/Frame (1).png'
+import profile from '../../../public/imgs/Frame.png'
 const Header = () => {
     return (
         <header className="border p-10">
@@ -13,10 +14,10 @@ const Header = () => {
                 </div>
                 <div className="flex gap-2">
                     <div className="flex items-center bg-gray-200 rounded-full text-black ">
-                        <img className="lg:block hidden w-5 h-5 ml-3 mr-2" src="/public/imgs/Frame (1).png" alt="" />
+                        <img className="lg:block hidden w-5 h-5 ml-3 mr-2" src={search} alt="" />
                         <input className="bg-transparent lg:block hidden outline-none  font-semibold" type="text" placeholder="Search" />
                     </div>
-                    <img className="bg-[#0BE58A] rounded-full p-2 active:scale-95 hover:bg-emerald-400 w-10 h-10" src="/public/imgs/Frame.png" alt="" />
+                    <img className="bg-[#0BE58A] rounded-full p-2 active:scale-95 hover:bg-emerald-400 w-10 h-10" src={profile} alt="" />
                 </div>
 
                 <div className="hidden flex-col gap-2 absolute right-0 top-12 border  bg-white p-5 rounded-md text-xl">
