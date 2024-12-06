@@ -4,16 +4,18 @@ import WantToCook from "./WantToCook"
 import { useEffect } from "react";
 
 const OurRecipes = () => {
-    const [foods, setFood] = useState([]);
+    const [foods, setFoods] = useState([]);
+    const [foodCooking, setFoodCooking] = useState([]);
+
     useEffect(() => {
         fetch('food.json')
             .then(res => res.json())
-            .then(data => setFood(data))
+            .then(data => setFoods(data))
     }, [])
 
      const WantToCookHandler = (food) =>{
         console.log('Clicked',food);
-        alert()
+        setFoodCooking(food)
      }
 
     return (
@@ -28,7 +30,7 @@ const OurRecipes = () => {
                 </div>
 
                 <div className="lg:w-3/5">
-                    <WantToCook />
+                    <WantToCook foodCooking={foodCooking}/>
                 </div>
             </div>
         </div>
