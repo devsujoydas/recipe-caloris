@@ -1,7 +1,7 @@
 [
     {
         "id": "rec001",
-        "img": "./imgs/food 1.png",
+        "img": "./imgs/Classic Spaghetti Bolognese.jpg",
         "name": "Classic Spaghetti Bolognese",
         "description": "Classic Italian pasta dish with savory meat sauce.",
         "ingredients": ["400g spaghetti", "300g ground beef", "1 cup marinara sauce", "1/2 cup grated Parmesan cheese", "2 tbsp olive oil"],
@@ -10,7 +10,7 @@
     },
     {
         "id": "rec002",
-        "img": "./imgs/food 2.png",
+        "img": "./imgs/Grilled Chicken Caesar Delight.jpg",
         "name": "Grilled Chicken Caesar Delight",
         "description": "Fresh romaine lettuce topped with grilled chicken, croutons, and Caesar dressing.",
         "ingredients": ["2 chicken breasts", "1 head romaine lettuce", "1/2 cup croutons", "1/4 cup shredded Parmesan", "Caesar dressing"],
@@ -19,7 +19,7 @@
     },
     {
         "id": "rec003",
-        "img": "./imgs/food 1.png",
+        "img": "./imgs/Authentic Margherita Pizza.jpg",
         "name": "Authentic Margherita Pizza",
         "description": "Traditional pizza with fresh mozzarella, basil, and tomato sauce.",
         "ingredients": ["1 pizza base", "150g fresh mozzarella", "100g tomato sauce", "5 fresh basil leaves", "1 tbsp olive oil"],
@@ -28,7 +28,7 @@
     },
     {
         "id": "rec004",
-        "img": "./imgs/food 2.png",
+        "img": "./imgs/Crispy Beef Tacos.jpg",
         "name": "Crispy Beef Tacos",
         "description": "Crispy tacos filled with seasoned beef, lettuce, and cheese.",
         "ingredients": ["300g ground beef", "6 taco shells", "1 cup shredded lettuce", "1/2 cup grated cheddar cheese", "2 tbsp taco seasoning"],
@@ -37,7 +37,7 @@
     },
     {
         "id": "rec005",
-        "img": "./imgs/food 1.png",
+        "img": "./imgs/Tangy Vegetable Stir Fry.jpg",
         "name": "Tangy Vegetable Stir Fry",
         "description": "A mix of fresh vegetables sautéed in a tangy soy-based sauce.",
         "ingredients": ["1 zucchini, sliced", "1 red bell pepper, sliced", "1 cup broccoli florets", "2 tbsp soy sauce", "1 tbsp sesame oil"],
@@ -46,7 +46,7 @@
     },
     {
         "id": "rec006",
-        "img": "./imgs/food 2.png",
+        "img": "./imgs/Creamy Tomato Basil Soup.jpg",
         "name": "Creamy Tomato Basil Soup",
         "description": "Creamy tomato soup with fresh basil, served warm.",
         "ingredients": ["6 ripe tomatoes, chopped", "2 cups chicken broth", "1/2 cup heavy cream", "1/4 cup fresh basil, chopped", "2 tbsp olive oil"],

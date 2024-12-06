@@ -7,8 +7,8 @@ const FoodCard = ({ food, wantToCookHandler }) => {
 
     return (
         <div id="card" className="w- rounded-xl border-2 shadow-md p-5 flex flex-col gap-3 lg:gap-4">
-            <figure className="w-full">
-                <img className="w-full" src={img} alt="" />
+            <figure className="w-full rounded-xl overflow-hidden">
+                <img className="w-full lg:h-56 h-44" src={img} alt="" />
             </figure>
             <h1 className="font-bold">{name}</h1>
             <p>{description}</p>
