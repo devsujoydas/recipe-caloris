@@ -13,6 +13,7 @@ const OurRecipes = () => {
 
      const WantToCookHandler = (food) =>{
         console.log('Clicked',food);
+        alert()
      }
 
     return (
