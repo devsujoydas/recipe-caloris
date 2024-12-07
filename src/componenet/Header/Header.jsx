@@ -2,7 +2,6 @@
 import search from '../../../public/imgs/Frame (1).png'
 import profile from '../../../public/imgs/Frame.png'
 const Header = () => {
-
     const toggleHandler = () =>{
         console.log('Clicked');
         const toggle = document.getElementById('nav-for-sm-dv')
@@ -34,7 +33,6 @@ const Header = () => {
                     <a href="#" className="hover:text-[#0BE58A] font-semibold border-2-transparent hover:border-b-[#068f56] hover:border-b-2 transition-all active:scale-95">About</a>
                     <a href="#" className="hover:text-[#0BE58A] font-semibold border-2-transparent hover:border-b-[#068f56] hover:border-b-2 transition-all active:scale-95">Search</a>
                 </div>
-
             </nav>
         </header>
     )
