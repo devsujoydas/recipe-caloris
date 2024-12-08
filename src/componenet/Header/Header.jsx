@@ -3,15 +3,18 @@ import { useState } from 'react'
 import search from '../../../public/imgs/Frame (1).png'
 import profile from '../../../public/imgs/Frame.png'
 const Header = () => {
-    const [navforsm, setNavforsm] = useState(false)
     const toggle = document.getElementById('nav-for-sm-dv')
+    const [navforsm, setNavforsm] = useState(0)
+
     const toggleHandler = () => {
         if (navforsm) {
             toggle.classList.remove('hidden')
             toggle.classList.add('flex')
+            setNavforsm(false)
         } else {
             toggle.classList.remove('flex')
             toggle.classList.add('hidden')
+            setNavforsm(true)
         }
 
     }
