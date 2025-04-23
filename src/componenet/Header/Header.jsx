@@ -1,7 +1,7 @@
 
 import { useState } from 'react'
-import search from '../../../public/imgs/Frame (1).png'
-import profile from '../../../public/imgs/Frame.png'
+import search from '/imgs/Frame (1).png'
+import profile from '/imgs/Frame.png'
 const Header = () => {
     const toggle = document.getElementById('nav-for-sm-dv')
     const [navforsm, setNavforsm] = useState(0)
@@ -19,7 +19,7 @@ const Header = () => {
 
     }
     return (
-        <header className="border p-10">
+        <header className=" p-10">
             <nav className="flex justify-between lg:lg:max-w-screen-2xl mx-auto relative">
                 <a href="" className="font-bold lg:text-4xl text-3xl">Recipe Calories </a>
                 <div className="lg:flex hidden items-center gap-10">

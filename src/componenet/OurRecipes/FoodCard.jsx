@@ -1,6 +1,6 @@
 /* eslint-disable react/prop-types */
-import time from '../../../public/imgs/time.png'
-import fire from '../../../public/imgs/fire.png'
+import time from '/imgs/time.png'
+import fire from '/imgs/fire.png'
 
 const FoodCard = ({ food, wantToCookHandler }) => {
     const { img, name, description, minutes, calories, ingredients } = food;
